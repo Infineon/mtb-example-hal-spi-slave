@@ -4,13 +4,13 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-hal-spi-slave)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMS4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMS4xIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
 
 ## Requirements
 
 - [ModusToolbox&trade; software](https://www.infineon.com/modustoolbox) v3.0 or later (tested with v3.0)
 - Board support package (BSP) minimum required version for:
-   - CYW920829M2EVK-02: v1.0.0.Beta4
+   - CYW920829M2EVK-02: v1.0.1
    - PSoC&trade; 6 MCU: v4.0.0
    - KIT_XMC72_EVK: v1.0.0
 - Programming language: C
@@ -24,7 +24,7 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 ## Supported kits (make variable 'TARGET')
 
-- AIROC&trade; CYW20829 Bluetooth&reg; LE evaluation kit – (`CYW920829M2EVK-02`) Default value of `TARGET`
+- [AIROC&trade; CYW20829 Bluetooth&reg; LE evaluation kit](https://www.infineon.com/CYW920829M2EVK-02) – (`CYW920829M2EVK-02`) Default value of `TARGET`
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; prototyping kit](https://www.infineon.com/CY8CPROTO-062-4343W) (`CY8CPROTO-062-4343W`)
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; pioneer kit](https://www.infineon.com/CY8CKIT-062-WIFI-BT) (`CY8CKIT-062-WIFI-BT`)
 - [PSoC&trade; 6 Bluetooth&reg; LE pioneer kit](https://www.infineon.com/CY8CKIT-062-BLE) (`CY8CKIT-062-BLE`)
@@ -267,6 +267,7 @@ Document title: *CE236720* - *HAL: SPI slave*
  ------- | ---------------------
  1.0.0   | New code example
  1.1.0   | Removed CYW920829M2EVB-01 from supported kits <br> Added support for CYBLE-416045-EVAL and CYW920829M2EVK-02
+ 1.1.1   | Readme Update
 
 <br />
 
