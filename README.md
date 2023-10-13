@@ -4,7 +4,7 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-hal-spi-slave)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMS4xIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMS4yIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
 
 ## Requirements
 
@@ -64,7 +64,7 @@ In AIROC&trade; CYW20829 Bluetooth&reg; kit (CYW920829M2EVK-02) the SPI (CS, CLK
  MISO             | P1[3]      |   J4.5
  CS               | P1[0]      |   J4.4
 
-
+**Note:** This code examples provides the custom design.modus files under template directory for few BSPs, because these BSPs do not have aliases for the SPI pins by default (e.g. CYBSP_SPI_MOSI, CYBSP_SPI_MISO, CYBSP_SPI_SCLK, CYBSP_SPI_CS). The other BSPs already have those aliases defined in the default design.modus file, thus do not need any customization.
 
 ## Software setup
 
@@ -268,6 +268,7 @@ Document title: *CE236720* - *HAL: SPI slave*
  1.0.0   | New code example
  1.1.0   | Removed CYW920829M2EVB-01 from supported kits <br> Added support for CYBLE-416045-EVAL and CYW920829M2EVK-02
  1.1.1   | Readme Update
+ 1.1.2   | Minor README update
 
 <br />
 
