@@ -4,14 +4,14 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-hal-spi-slave)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMi4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuMy4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
 
 ## Requirements
 
 - [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.1 or later (tested with v3.1)
 - Board support package (BSP) minimum required version for:
    - CYW920829M2EVK-02: v1.0.1
-   - PSoC&trade; 6 MCU: v4.0.0
+   - PSoC&trade; 6 MCU: v4.2.0
    - KIT_XMC72_EVK: v1.0.0
 - Programming language: C
 - Associated parts: All [PSoC&trade; 6 MCU](https://www.infineon.com/PSoC6) parts, [XMC7000 MCU](https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microcontroller-based-on-arm-cortex-m/), and [AIROC&trade; CYW20829 Bluetooth&reg; LE SoC](https://www.infineon.com/cms/en/product/promopages/airoc20829)
@@ -26,7 +26,7 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 - [PSoC&trade; 62S2 Wi-Fi Bluetooth&reg; Prototyping Kit](https://www.infineon.com/CY8CPROTO-062S2-43439) (`CY8CPROTO-062S2-43439`) – Default value of `TARGET`
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; Prototyping Kit](https://www.infineon.com/CY8CPROTO-062-4343W) (`CY8CPROTO-062-4343W`)
-- [AIROC&trade; CYW20829 Bluetooth&reg; LE evaluation kit](https://www.infineon.com/CYW920829M2EVK-02) – (`CYW920829M2EVK-02`)
+- [AIROC&trade; CYW20829 Bluetooth&reg; LE Evaluation Kit](https://www.infineon.com/CYW920829M2EVK-02) – (`CYW920829M2EVK-02`)
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; Pioneer Kit](https://www.infineon.com/CY8CKIT-062-WIFI-BT) (`CY8CKIT-062-WIFI-BT`)
 - [PSoC&trade; 6 Bluetooth&reg; LE Pioneer Kit](https://www.infineon.com/CY8CKIT-062-BLE) (`CY8CKIT-062-BLE`)
 - [PSoC&trade; 6 Bluetooth&reg; LE Prototyping Kit](https://www.infineon.com/CY8CPROTO-063-BLE) (`CY8CPROTO-063-BLE`)
@@ -37,10 +37,11 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 - [EZ-BLE Arduino Evaluation Board](https://www.infineon.com/cms/en/product/evaluation-boards/cyble-416045-eval/) (`CYBLE-416045-EVAL`)
 - [PSoC&trade; 64 "Secure Boot" Wi-Fi Bluetooth&reg; Pioneer Kit](https://www.infineon.com/CY8CKIT-064B0S2-4343W) (`CY8CKIT-064B0S2-4343W`)
 - [PSoC&trade; 62S4 Pioneer Kit](https://www.infineon.com/CY8CKIT-062S4) (`CY8CKIT-062S4`)
-- [PSoC&trade; 62S2 Evaluation Kit](https://www.infineon.com/CY8CEVAL-062S2) (`CY8CEVAL-062S2`, `CY8CEVAL-062S2-LAI-4373M2`, `CY8CEVAL-062S2-MUR-43439M2`)
+- [PSoC&trade; 62S2 Evaluation Kit](https://www.infineon.com/CY8CEVAL-062S2) (`CY8CEVAL-062S2`, `CY8CEVAL-062S2-LAI-4373M2`, `CY8CEVAL-062S2-MUR-43439M2`, `CY8CEVAL-062S2-LAI-43439M2`, `CY8CEVAL-062S2-MUR-4373EM2`, `CY8CEVAL-062S2-MUR-4373M2`)
 - [PSoC&trade; 64 "Secure Boot" Prototyping Kit](https://www.infineon.com/CY8CPROTO-064B0S3) (`CY8CPROTO-064B0S3`)
 - [PSoC&trade; 64 "Secure Boot" Prototyping Kit](https://www.infineon.com/CY8CPROTO-064S1-SB) (`CY8CPROTO-064S1-SB`)
 - [XMC7200 Evaluation Kit](https://www.infineon.com/KIT_XMC72_EVK) (`KIT_XMC72_EVK`, `KIT_XMC72_EVK_MUR_43439M2`)
+- [XMC7100 Evaluation Kit](https://www.infineon.com/KIT_XMC71_EVK_LITE_V1) (`KIT_XMC71_EVK_LITE_V1`)
 
 ## Hardware setup
 
@@ -70,7 +71,8 @@ In AIROC&trade; CYW20829 Bluetooth&reg; kit (CYW920829M2EVK-02) the SPI (CS, CLK
 ## Software setup
 
 See the [ModusToolbox&trade; tools package installation guide](https://www.infineon.com/ModusToolboxInstallguide) for information about installing and configuring the tools package.
-Install a terminal emulator if you don't have one. Instructions in this document use [Tera Term](https://ttssh2.osdn.jp/index.html.en).
+
+Install a terminal emulator if you don't have one. Instructions in this document use [Tera Term](https://teratermproject.github.io/index-en.html).
 
 
 ## Using the code example
@@ -111,10 +113,10 @@ The 'project-creator-cli' tool can be used to create applications from a CLI ter
 
 Use a CLI terminal to invoke the 'project-creator-cli' tool. On Windows, use the command-line 'modus-shell' program provided in the ModusToolbox&trade; installation instead of a standard Windows command-line application. This shell provides access to all ModusToolbox&trade; tools. You can access it by typing "modus-shell" in the search box in the Windows menu. In Linux and macOS, you can use any terminal application.
 
-The following example clones the "[SPI Slave](https://github.com/Infineon/mtb-example-hal-spi-slave)" application with the desired name "SpiSlave" configured for the *CY8CKIT-062-WIFI-BT* BSP into the specified working directory, *C:/mtb_projects*:
+The following example clones the "[SPI Slave](https://github.com/Infineon/mtb-example-hal-spi-slave)" application with the desired name "SpiSlave" configured for the *CY8CPROTO-062S2-43439* BSP into the specified working directory, *C:/mtb_projects*:
 
    ```
-   project-creator-cli --board-id CY8CKIT-062-WIFI-BT --app-id mtb-example-hal-spi-slave --user-app-name SpiSlave --target-dir "C:/mtb_projects"
+   project-creator-cli --board-id CY8CPROTO-062S2-43439 --app-id mtb-example-hal-spi-slave --user-app-name SpiSlave --target-dir "C:/mtb_projects"
    ```
 
 
@@ -185,7 +187,7 @@ For more details, see the [ModusToolbox&trade; tools package user guide](https:/
 
 ## Operation
 
-If using a PSoC&trade; 64 "Secure" MCU kit (like CY8CKIT-064B0S2-4343W, CY8CPROTO-064B0S3 and CY8CPROTO-064S1-SB), the PSoC&trade; 64 device must be provisioned with keys and policies before being programmed. Follow the instructions in the ["Secure Boot" SDK user guide](https://www.infineon.com/dgdlac/Infineon-PSoC_64_Secure_MCU_Secure_Boot_SDK_User_Guide-Software-v07_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0f8c361a7666) to provision the device. If the kit is already provisioned, copy-paste the keys and policy folder to the application folder.
+If using a PSoC&trade; 64 "Secure" MCU kit (like CY8CKIT-064B0S2-4343W), the PSoC&trade; 64 device must be provisioned with keys and policies before being programmed. Follow the instructions in the ["Secure Boot" SDK user guide](https://www.infineon.com/dgdlac/Infineon-PSoC_64_Secure_MCU_Secure_Boot_SDK_User_Guide-Software-v07_00-EN.pdf?fileId=8ac78c8c7d0d8da4017d0f8c361a7666) to provision the device. If the kit is already provisioned, copy-paste the keys and policy folder to the application folder.
 
 1. Connect the board to your PC using the provided USB cable through the KitProg3 USB connector.
 
@@ -275,7 +277,7 @@ Device documentation | [PSoC&trade; 6 MCU datasheets](https://documentation.infi
 Development kits | Select your kits from the [Evaluation board finder](https://www.infineon.com/cms/en/design-support/finder-selection-tools/product-finder/evaluation-board)
 Libraries on GitHub  | [mtb-hal-cat1](https://github.com/Infineon/mtb-hal-cat1) – Hardware Abstraction Layer (HAL) library <br> [retarget-io](https://github.com/Infineon/retarget-io) – Utility library to retarget STDIO messages to a UART port
 Middleware on GitHub | [capsense](https://github.com/Infineon/capsense) – CAPSENSE&trade; library and documents <br> [psoc6-middleware](https://github.com/Infineon/modustoolbox-software#psoc-6-middleware-libraries) – Links to all PSoC&trade; 6 MCU middleware
-Tools  | [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) – ModusToolbox&trade; software is a collection of easy-to-use software and tools enabling rapid development with Infineon MCUs, covering applications from embedded sense and control to wireless and cloud-connected systems using AIROC&trade; Wi-Fi and Bluetooth&reg; connectivity devices.
+Tools  | [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) – ModusToolbox&trade; software is a collection of easy-to-use libraries and tools enabling rapid development with Infineon MCUs for applications ranging from wireless and cloud-connected systems, edge AI/ML, embedded sense and control, to wired USB connectivity using PSoC&trade; Industrial/IoT MCUs, AIROC&trade; Wi-Fi and Bluetooth&reg; connectivity devices, XMC&trade; Industrial MCUs, and EZ-USB&trade;/EZ-PD&trade; wired connectivity controllers. ModusToolbox&trade; incorporates a comprehensive set of BSPs, HAL, libraries, configuration tools, and provides support for industry-standard IDEs to fast-track your embedded application development.
 
 <br>
 
@@ -285,7 +287,7 @@ Infineon provides a wealth of data at [www.infineon.com](https://www.infineon.co
 
 For PSoC&trade; 6 MCU devices, see [How to design with PSoC&trade; 6 MCU - KBA223067](https://community.infineon.com/docs/DOC-14644) in the Infineon Developer community.
 
-For XMC&trade; MCU devices, see [32-bit XMC™ Industrial microcontroller based on Arm® Cortex®-M](https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microcontroller-based-on-arm-cortex-m/).
+For XMC&trade; MCU devices, see [32-bit XMC&trade; Industrial microcontroller based on Arm&reg; Cortex&reg;-M](https://www.infineon.com/cms/en/product/microcontroller/32-bit-industrial-microcontroller-based-on-arm-cortex-m/).
 
 ## Document history
 
@@ -297,8 +299,16 @@ Document title: *CE236720* - *HAL: SPI slave*
  1.1.0   | Removed CYW920829M2EVB-01 from supported kits <br> Added support for CYBLE-416045-EVAL and CYW920829M2EVK-02
  1.1.1   | Readme Update
  1.1.2   | Minor README update
- 1.2.0   | Added support for KIT_XMC72_EVK_MUR_43439M2 and updated to support ModusToolbox&trade; v3.1.        
+ 1.2.0   | Added support for KIT_XMC72_EVK_MUR_43439M2 and updated to support ModusToolbox&trade; v3.1.
+ 1.3.0   | Added support for KIT_XMC71_EVK_LITE_V1, CY8CEVAL-062S2-LAI-43439M2, CY8CEVAL-062S2-MUR-4373EM2, CY8CEVAL-062S2-MUR-4373M2      
 <br>
+
+
+
+All referenced product or service names and trademarks are the property of their respective owners.
+
+The Bluetooth&reg; word mark and logos are registered trademarks owned by Bluetooth SIG, Inc., and any use of such marks by Infineon is under license.
+
 
 ---------------------------------------------------------
 
