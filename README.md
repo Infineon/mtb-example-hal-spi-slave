@@ -4,15 +4,14 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 
 [View this README on GitHub.](https://github.com/Infineon/mtb-example-hal-spi-slave)
 
-[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuNS4xIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
+[Provide feedback on this code example.](https://cypress.co1.qualtrics.com/jfe/form/SV_1NTns53sK2yiljn?Q_EED=eyJVbmlxdWUgRG9jIElkIjoiQ0UyMzY3MjAiLCJTcGVjIE51bWJlciI6IjAwMi0zNjcyMCIsIkRvYyBUaXRsZSI6IkhBTDogU1BJIHNsYXZlIiwicmlkIjoieWFra3VuZGkiLCJEb2MgdmVyc2lvbiI6IjEuNi4wIiwiRG9jIExhbmd1YWdlIjoiRW5nbGlzaCIsIkRvYyBEaXZpc2lvbiI6Ik1DRCIsIkRvYyBCVSI6IklDVyIsIkRvYyBGYW1pbHkiOiJCVEFCTEUifQ==)
 
 ## Requirements
 
 - [ModusToolbox&trade;](https://www.infineon.com/modustoolbox) v3.2 or later (tested with v3.2)
 - Board support package (BSP) minimum required version for:
-   - CYW920829M2EVK-02: v1.0.1
-   - CYW989829M2EVB-01: v1.0.4
-   - CYW989829M2EVB-03: v1.0.4
+   - CYW920829M2EVK-02: v3.0.0
+   - CYW989829M2EVB-01: v3.0.0
    - PSoC&trade; 6 MCU: v4.2.0
    - KIT_XMC72_EVK: v1.0.0
 - Programming language: C
@@ -29,7 +28,7 @@ This code example demonstrates the use of a SPI (HAL) resource in slave mode. Th
 - [PSoC&trade; 62S2 Wi-Fi Bluetooth&reg; Prototyping Kit](https://www.infineon.com/CY8CPROTO-062S2-43439) (`CY8CPROTO-062S2-43439`) – Default value of `TARGET`
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; Prototyping Kit](https://www.infineon.com/CY8CPROTO-062-4343W) (`CY8CPROTO-062-4343W`)
 - [AIROC&trade; CYW20829 Bluetooth&reg; LE Evaluation Kit](https://www.infineon.com/CYW920829M2EVK-02) – (`CYW920829M2EVK-02`)
-- AIROC&trade; CYW89829 Bluetooth&reg; LE evaluation kit(`CYW89829M2EVB-01`,`CYW89829M2EVB-03`)
+- AIROC&trade; CYW89829 Bluetooth&reg; LE evaluation kit(`CYW89829M2EVB-01`)
 - [PSoC&trade; 6 Wi-Fi Bluetooth&reg; Pioneer Kit](https://www.infineon.com/CY8CKIT-062-WIFI-BT) (`CY8CKIT-062-WIFI-BT`)
 - [PSoC&trade; 6 Bluetooth&reg; LE Pioneer Kit](https://www.infineon.com/CY8CKIT-062-BLE) (`CY8CKIT-062-BLE`)
 - [PSoC&trade; 6 Bluetooth&reg; LE Prototyping Kit](https://www.infineon.com/CY8CPROTO-063-BLE) (`CY8CPROTO-063-BLE`)
@@ -315,6 +314,7 @@ Document title: *CE236720* - *HAL: SPI slave*
  1.4.0   | Added support for CYW989829M2EVB-01.
  1.5.0   | Added support for CYW989829M2EVB-03.
  1.5.1   | Updated the design.modus for CYW989829M2EVB-03
+ 1.6.0   | Remove support for CYW989829M2EVB-03 and removal of template for CYW920829M2EVK-02,KIT_XMC72_EVK
 
 <br>
 
